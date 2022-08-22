@@ -167,33 +167,37 @@
 								<div class="flex items-center justify-between">
 									<span class="text-xl">Per Player:</span>
 									<input
-										type="text"
+										type="number"
+										id="player-input-element"
 										class="ml-3 indent-3 py-1 outline-none text-black"
 									/>
 								</div>
 								<div>
 									<button
 										class="text-white block w-full bg-red-600 mt-5 text-xl py-2"
+										id="calculate-player-cost-btn"
 									>
 										Calculate
 									</button>
 								</div>
 								<div>
 									<h1 class="text-2xl my-5">
-										Player expenses: $<span id=""></span>
+										Player expenses: $<span id="players-expenses"></span>
 									</h1>
 
 									<div class="flex items-center justify-between my-2">
 										<span class="text-xl">Manager:</span>
 										<input
-											type="text"
+											type="number"
+											id="manager-input-element"
 											class="ml-3 indent-3 py-1 outline-none text-black"
 										/>
 									</div>
 									<div class="flex items-center justify-between my-3">
 										<span class="text-xl">Coach:</span>
 										<input
-											type="text"
+											type="number"
+											id="coach-input-element"
 											class="ml-3 indent-3 py-1 outline-none text-black"
 										/>
 									</div>
@@ -201,6 +205,7 @@
 									<div>
 										<button
 											class="text-white block w-full bg-red-600 mt-5 text-xl py-2"
+											id="calculate-total-cost-btn"
 										>
 											Calculate
 										</button>
