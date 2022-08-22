@@ -23,3 +23,16 @@ header {
 	justify-content: center;
 	align-items: center;
 }
+
+@media only screen and (max-width: 370px) {
+	.flex-direction-column {
+		flex-direction: column !important;
+		align-items: flex-start !important;
+		justify-content: flex-start !important;
+	}
+	.flex-direction-column input {
+		display: block;
+		width: 100%;
+		margin: 5px 0 0 0;
+	}
+}

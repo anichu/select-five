@@ -20,8 +20,8 @@
 					</h1>
 					<p class="text-white text-2xl text-center font-semibold">
 						You can choose your favourite players to <br />
-						make your dream team.You also calculate your total price to make
-						your team <br />
+						make your dream team.You can choose maximum fived players. <br />
+						You also calculate your total price to make your team <br />
 						as you want.keep choosing...
 					</p>
 				</div>
@@ -30,11 +30,16 @@
 		<!-- end header section -->
 
 		<!-- start main section -->
-		<main>
-			<section class="mx-3 mt-10">
-				<div class="grid grid-cols-3 gap-2">
-					<div class="card-section border col-span-2 bg-slate-900">
-						<div class="grid grid-cols-3 gap-3 p-3" id="cards">
+		<main class="">
+			<section class="px-3 mt-10">
+				<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2">
+					<div
+						class="card-section border lg:col-span-2 md:col-span-1 bg-slate-900"
+					>
+						<div
+							class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3 p-3"
+							id="cards"
+						>
 							<div class="p-3 border border-slate-700 shadow">
 								<div>
 									<img class="w-full" src="images/p1.png" alt="" />
@@ -198,7 +203,9 @@
 							</div>
 							<div>
 								<h1 class="text-3xl text-center mb-3">Budget</h1>
-								<div class="flex items-center justify-between">
+								<div
+									class="flex items-center flex-direction-column justify-between"
+								>
 									<span class="text-xl">Per Player:</span>
 									<input
 										type="number"
@@ -219,7 +226,9 @@
 										Player expenses: $<span id="players-expenses"></span>
 									</h1>
 
-									<div class="flex items-center justify-between my-2">
+									<div
+										class="flex items-center flex-direction-column justify-between my-2"
+									>
 										<span class="text-xl">Manager:</span>
 										<input
 											type="number"
@@ -227,7 +236,9 @@
 											class="ml-3 indent-3 py-1 outline-none text-black"
 										/>
 									</div>
-									<div class="flex items-center justify-between my-3">
+									<div
+										class="flex items-center flex-direction-column justify-between my-3"
+									>
 										<span class="text-xl">Coach:</span>
 										<input
 											type="number"
