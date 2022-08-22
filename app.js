@@ -5,14 +5,12 @@ const managerInputElement = document.getElementById("manager-input-element");
 const calculatePlayerCostBtn = document.getElementById(
 	"calculate-player-cost-btn"
 );
-
 const calculateTotalCostBtn = document.getElementById(
 	"calculate-total-cost-btn"
 );
-
 const playersExpensesElement = document.getElementById("players-expenses");
-
 const cardsElement = document.getElementById("cards");
+const totalCostElement = document.getElementById("total-cost-element");
 
 function addPlayersToList(selectedElement) {
 	let playerName = selectedElement.parentNode.children[0].innerText;
@@ -37,7 +35,7 @@ cardsElement.addEventListener("click", (event) => {
 });
 
 function calculateTotalCostForPlayers(perPlayerCost, numberOfSelectedPlayer) {
-	return perPlayerCost * numberOfSelectedPlayer;
+	return parseInt(perPlayerCost) * parseInt(numberOfSelectedPlayer);
 }
 calculatePlayerCostBtn.addEventListener("click", function () {
 	let perPlayerCost = playerInputElement.value;
@@ -53,8 +51,24 @@ calculatePlayerCostBtn.addEventListener("click", function () {
 			perPlayerCost,
 			numberOfSelectedPlayer
 		);
-		playersExpensesElement.innerText = totalCostForPlayers.toFixed(2);
+		playersExpensesElement.innerText = totalCostForPlayers;
 	}
 
 	//console.log(perPlayerCost);
+});
+
+calculateTotalCostBtn.addEventListener("click", function () {
+	let costForManager = parseInt(managerInputElement.value);
+	let costForCoach = parseInt(coachInputElement.value);
+	let costForPlayers = parseInt(playersExpensesElement.innerText);
+	console.log(costForPlayers);
+	if (isNaN(costForCoach) || isNaN(costForManager)) {
+		alert("Please,fill the empty input element");
+	} else if (isNaN(costForPlayers)) {
+		alert("Please,Calculate the expenses for players");
+	}
+	let totalCost = costForCoach + costForManager + costForPlayers;
+	if (!isNaN(totalCost)) {
+		totalCostElement.innerText = totalCost;
+	}
 });
