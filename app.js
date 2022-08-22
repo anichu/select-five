@@ -11,6 +11,8 @@ const calculateTotalCostBtn = document.getElementById(
 const playersExpensesElement = document.getElementById("players-expenses");
 const cardsElement = document.getElementById("cards");
 const totalCostElement = document.getElementById("total-cost-element");
+const dollarSignTotal = document.getElementById("dollar-sign-total");
+const dollarSignPlayer = document.getElementById("dollar-sign-player");
 
 function addPlayersToList(selectedElement) {
 	let playerName = selectedElement.parentNode.children[0].innerText;
@@ -51,6 +53,7 @@ calculatePlayerCostBtn.addEventListener("click", function () {
 			perPlayerCost,
 			numberOfSelectedPlayer
 		);
+		dollarSignPlayer.style.display = "block";
 		playersExpensesElement.innerText = totalCostForPlayers;
 	}
 
@@ -69,6 +72,7 @@ calculateTotalCostBtn.addEventListener("click", function () {
 	}
 	let totalCost = costForCoach + costForManager + costForPlayers;
 	if (!isNaN(totalCost)) {
+		dollarSignTotal.style.display = "block";
 		totalCostElement.innerText = totalCost;
 	}
 });
