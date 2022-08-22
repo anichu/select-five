@@ -34,7 +34,7 @@
 			<section class="mx-3 mt-10">
 				<div class="grid grid-cols-3 gap-2">
 					<div class="card-section border col-span-2 bg-slate-900">
-						<div class="grid grid-cols-3 gap-3 p-3">
+						<div class="grid grid-cols-3 gap-3 p-3" id="cards">
 							<div class="p-3 border border-slate-700 shadow">
 								<div>
 									<img class="w-full" src="images/p1.png" alt="" />
@@ -46,7 +46,7 @@
 										<span>60 Assist</span>
 									</div>
 									<button
-										class="bg-red-700 text-white block w-full text-xl py-2"
+										class="bg-red-700 text-white block w-full text-xl py-2 disabled:bg-white disabled:text-black"
 									>
 										Select
 									</button>
@@ -57,13 +57,13 @@
 									<img class="w-full" src="images/p2.png" alt="" />
 								</div>
 								<div class="text-center">
-									<h2 class="text-2xl text-white my-3">Neymar Jr</h2>
+									<h2 class="text-2xl text-white my-3">Lionel Messi</h2>
 									<div class="text-slate-600 mb-3">
 										<span>36 Goals</span>
 										<span>60 Assist</span>
 									</div>
 									<button
-										class="bg-red-700 text-white block w-full text-xl py-2"
+										class="bg-red-700 text-white block w-full text-xl py-2 disabled:bg-white disabled:text-black"
 									>
 										Select
 									</button>
@@ -74,13 +74,13 @@
 									<img class="w-full" src="images/p3.png" alt="" />
 								</div>
 								<div class="text-center">
-									<h2 class="text-2xl text-white my-3">Neymar Jr</h2>
+									<h2 class="text-2xl text-white my-3">Kylian Mbappé</h2>
 									<div class="text-slate-600 mb-3">
 										<span>36 Goals</span>
 										<span>60 Assist</span>
 									</div>
 									<button
-										class="bg-red-700 text-white block w-full text-xl py-2"
+										class="bg-red-700 text-white block w-full text-xl py-2 disabled:bg-white disabled:text-black"
 									>
 										Select
 									</button>
@@ -91,13 +91,13 @@
 									<img class="w-full" src="images/p4.png" alt="" />
 								</div>
 								<div class="text-center">
-									<h2 class="text-2xl text-white my-3">Neymar Jr</h2>
+									<h2 class="text-2xl text-white my-3">Vítor Machado</h2>
 									<div class="text-slate-600 mb-3">
 										<span>36 Goals</span>
 										<span>60 Assist</span>
 									</div>
 									<button
-										class="bg-red-700 text-white block w-full text-xl py-2"
+										class="bg-red-700 text-white block w-full text-xl py-2 disabled:bg-white disabled:text-black"
 									>
 										Select
 									</button>
@@ -108,13 +108,13 @@
 									<img class="w-full" src="images/p5.png" alt="" />
 								</div>
 								<div class="text-center">
-									<h2 class="text-2xl text-white my-3">Neymar Jr</h2>
+									<h2 class="text-2xl text-white my-3">Sergio Ramos</h2>
 									<div class="text-slate-600 mb-3">
 										<span>36 Goals</span>
 										<span>60 Assist</span>
 									</div>
 									<button
-										class="bg-red-700 text-white block w-full text-xl py-2"
+										class="bg-red-700 text-white block w-full text-xl py-2 disabled:bg-white disabled:text-black"
 									>
 										Select
 									</button>
@@ -125,13 +125,13 @@
 									<img class="w-full" src="images/p6.png" alt="" />
 								</div>
 								<div class="text-center">
-									<h2 class="text-2xl text-white my-3">Neymar Jr</h2>
+									<h2 class="text-2xl text-white my-3">Renato Sanches</h2>
 									<div class="text-slate-600 mb-3">
 										<span>36 Goals</span>
 										<span>60 Assist</span>
 									</div>
 									<button
-										class="bg-red-700 text-white block w-full text-xl py-2"
+										class="bg-red-700 text-white block w-full text-xl py-2 disabled:bg-white disabled:text-black"
 									>
 										Select
 									</button>
@@ -142,13 +142,13 @@
 									<img class="w-full" src="images/p7.webp" alt="" />
 								</div>
 								<div class="text-center">
-									<h2 class="text-2xl text-white my-3">Neymar Jr</h2>
+									<h2 class="text-2xl text-white my-3">Mohamed Salah</h2>
 									<div class="text-slate-600 mb-3">
 										<span>36 Goals</span>
 										<span>60 Assist</span>
 									</div>
 									<button
-										class="bg-red-700 text-white block w-full text-xl py-2"
+										class="bg-red-700 text-white block w-full text-xl py-2 transition-all disabled:bg-white disabled:text-black"
 									>
 										Select
 									</button>
@@ -160,13 +160,7 @@
 						<div class="">
 							<div>
 								<h1 class="text-3xl text-center">Select V</h1>
-								<ul class="list-decimal text-left" id="players-list">
-									<li class="py-2">Coffee</li>
-									<li class="py-2">Coffee</li>
-									<li class="py-2">Coffee</li>
-									<li class="py-2">Coffee</li>
-									<li class="py-2">Coffee</li>
-								</ul>
+								<ul class="list-decimal text-left mb-4" id="players-list"></ul>
 							</div>
 							<div>
 								<h1 class="text-3xl text-center mb-3">Budget</h1>
